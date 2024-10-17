@@ -1,19 +1,14 @@
 /* General Styles */
 body {
     font-family: sans-serif;
-    margin: 0; /* Remove default body margin */
-    padding: 0; /* Remove default body padding */
+    margin: 0;
+    padding: 0;
     background-color: #f9f9f9;
 }
 
 header {
     padding: 1rem;
     text-align: center;
-}
-
-main {
-    padding: 2rem;
-    margin-bottom: 4rem;
 }
 
 /* Section Styling */
@@ -23,28 +18,23 @@ section {
 
 footer {
     background-color: #333;
+    padding: 1rem;
+}
+
+footer p {
     color: white;
     text-align: center;
-    padding: 1rem;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    z-index: 100%;
 }
 
 .background {
     background-image: url(Images/chess-4.jpg);
     background-size: cover;
     background-position: center;
-    padding: 5rem 0;
+    background-repeat: no-repeat;
     display: flex;
-    flex-direction: column; /* Ensure sections stack vertically */
+    flex-direction: column; /* Stack sections vertically */
     align-items: center;
-    width: 100vw; /* Make the background stretch to the full viewport width */
-    position: relative; /* Allows for absolute positioning if needed */
-    left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
+    width: 100v;
 }
 
 .overlay {

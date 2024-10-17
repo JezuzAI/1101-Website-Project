@@ -19,21 +19,14 @@
         <div class = "background">
             <section class = "overlay">
                 <h2>What is Chess</h2>
-                <p>
-                    Chess is a strategic board game that involves two players and is played on an 8x8 grid known as a chessboard. Each player controls 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. The pieces have distinct movements, and the goal is to place the opponent's king in a position known as "checkmate," where it cannot escape capture.
-                    <br>
-                    <br>
-                    The game begins with the pieces arranged in specific positions, and players take turns moving one piece at a time. Chess is often seen as a game of skill and strategy, as players must think ahead and plan moves to outmaneuver their opponent. It is a game of both attack and defense, requiring players to consider their own objectives while countering the moves of their opponent.
-                    <br>
-                    <br>
-                    Chess has been played for centuries and is enjoyed worldwide as a competitive game, mental exercise, and an intellectual challenge.
-                </p>
+                <div class = "text" id = "what-is-chess-content"></div>
             </section>
 
             <!-- Projects Section -->
             <section class = "overlay">
-                <h2>How pieces move</h2>
-                <p>Chess has a rich and complex history that spans over a thousand years, evolving across different cultures and regions. It is widely believed that the game originated in northern India around the 6th century under the name "chaturanga," which means "four divisions of the military" in Sanskrit. This early form of chess represented the four branches of the Indian army: infantry, cavalry, elephants, and chariots, which correspond to the modern-day pawns, knights, bishops, and rooks.
+                <h2>history of Chess</h2>
+                <p class = "text">
+                    Chess has a rich and complex history that spans over a thousand years, evolving across different cultures and regions. It is widely believed that the game originated in northern India around the 6th century under the name "chaturanga," which means "four divisions of the military" in Sanskrit. This early form of chess represented the four branches of the Indian army: infantry, cavalry, elephants, and chariots, which correspond to the modern-day pawns, knights, bishops, and rooks.
                     <br>
                     <br>
                     From India, chess spread to Persia, where it was called "shatranj." The Persians refined the rules and introduced some of the terms still used in chess today, such as "check" and "checkmate." When the Islamic empire expanded in the 7th and 8th centuries, chess was introduced to the Arab world and eventually into Europe through Spain and Italy by the 10th century.
@@ -42,7 +35,8 @@
                     In Europe, the game underwent further transformations, most notably in the 15th century when the queen became the most powerful piece on the board. This version of chess, often called "modern chess," took hold and became popular across the continent. By the 19th century, chess became a competitive game with established rules, leading to the first chess tournaments and the rise of famous players.
                     <br>
                     <br>
-                    Today, chess is played and enjoyed by millions of people worldwide, serving as a symbol of intellectual and strategic challenge. Its long history reflects its ability to adapt and remain relevant across different cultures and eras.</p>
+                    Today, chess is played and enjoyed by millions of people worldwide, serving as a symbol of intellectual and strategic challenge. Its long history reflects its ability to adapt and remain relevant across different cultures and eras.
+                </p>
             </section>
         </div>
     </main>
@@ -51,5 +45,23 @@
     <footer>
         <p>&copy; 500 AD Some Random Person</p>
     </footer>
+
+    <script>
+        // Fetch the content of "What is Chess"
+        fetch('Text/what-is-chess.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('what-is-chess-content').innerText = data;
+            })
+            .catch(error => console.error('Error fetching the file:', error));
+
+        // Fetch the content for "History of Chess"
+        fetch('Text/history-of-chess.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('history-content').innerText = data;
+            })
+            .catch(error => console.error('Error fetching the file:', error));
+    </script>
 </body>
 </html>

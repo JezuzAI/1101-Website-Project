@@ -1,0 +1,5 @@
+Chess is a strategic board game that involves two players and is played on an 8x8 grid known as a chessboard. Each player controls 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. The pieces have distinct movements, and the goal is to place the opponent's king in a position known as "checkmate," where it cannot escape capture.
+
+The game begins with the pieces arranged in specific positions, and players take turns moving one piece at a time. Chess is often seen as a game of skill and strategy, as players must think ahead and plan moves to outmaneuver their opponent. It is a game of both attack and defense, requiring players to consider their own objectives while countering the moves of their opponent.
+
+Chess has been played for centuries and is enjoyed worldwide as a competitive game, mental exercise, and an intellectual challenge.
